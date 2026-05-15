@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEVAI — AI-Powered Dashboard Intelligence</title>
+  <meta name="description" content="HEVAI builds custom AI dashboards and intelligent platforms. Stop adapting to rigid software — let us engineer a platform that adapts to you."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══ Dynamic Mesh Background ═══ -->
+<div class="mesh-bg">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<!-- ═══ Navigation ═══ -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#" class="nav-brand">HEVAI</a>
+    <div class="nav-links">
+      <a href="#services">Solutions</a>
+      <a href="#industries">Industries</a>
+      <a href="#process">Process</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#leadership">Company</a>
+    </div>
+    <a href="#cta" class="nav-cta">Build Your Dashboard</a>
+    <div class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services">Solutions</a>
+  <a href="#industries">Industries</a>
+  <a href="#process">Process</a>
+  <a href="#metrics">Metrics</a>
+  <a href="#leadership">Company</a>
+  <a href="#cta">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="hero-badge reveal">
+      <div class="dot"></div>
+      <span>System Online</span>
+    </div>
+    <h1 class="reveal reveal-delay-1">
+      Let's Build Your<br/>
+      Next <span class="gradient-text">Dashboard.</span>
+    </h1>
+    <p class="reveal reveal-delay-2">
+      Stop adapting your business to rigid software. We engineer AI-powered platforms
+      with custom architecture, real-time analytics, and operational intelligence — built
+      exactly to your workflow.
+    </p>
+    <div class="hero-cta-group reveal reveal-delay-3">
+      <a href="#cta" class="btn-primary">Start Building</a>
+      <a href="#services" class="btn-ghost">Explore Solutions</a>
+    </div>
+
+    <!-- Floating Dashboard Preview -->
+    <div class="hero-preview glass inner-glow reveal reveal-delay-4" style="padding:4px;">
+      <div class="preview-frame" style="border-radius:12px; background:var(--bg); aspect-ratio:16/9; position:relative; overflow:hidden;">
+        <!-- SVG Dashboard Illustration -->
+        <svg viewBox="0 0 1200 675" width="100%" height="100%" style="display:block;">
+          <defs>
+            <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00f4fe" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#00f4fe" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00f4fe" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#00f4fe" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="barGrad1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#e60026"/>
+              <stop offset="100%" stop-color="#e60026" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <!-- Background Grid -->
+          <rect width="1200" height="675" fill="#0e0e0f"/>
+          <g opacity="0.15">
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(100,0)"/>
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(300,0)"/>
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(500,0)"/>
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(700,0)"/>
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(900,0)"/>
+            <line x1="0" y1="0" x2="0" y2="675" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(1100,0)"/>
+            <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(0,135)"/>
+            <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(0,270)"/>
+            <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(0,405)"/>
+            <line x1="0" y1="0" x2="1200" y2="0" stroke="#00f4fe" stroke-width="0.5" opacity="0.3" transform="translate(0,540)"/>
+          </g>
+          <!-- Sidebar -->
+          <rect x="0" y="0" width="60" height="675" fill="#1c1b1c" opacity="0.8"/>
+          <circle cx="30" cy="30" r="10" fill="#e60026" opacity="0.6"/>
+          <rect x="18" y="70" width="24" height="24" rx="4" fill="#353436"/>
+          <rect x="18" y="110" width="24" height="24" rx="4" fill="#353436"/>
+          <rect x="18" y="150" width="24" height="24" rx="4" fill="#00f4fe" opacity="0.3"/>
+          <rect x="18" y="190" width="24" height="24" rx="4" fill="#353436"/>
+          <!-- Top Bar -->
+          <rect x="60" y="0" width="1140" height="50" fill="#1c1b1c" opacity="0.6"/>
+          <text x="80" y="32" fill="#e5e2e3" font-family="Geist,sans-serif" font-size="14" font-weight="600">HEVAI Dashboard</text>
+          <text x="1100" y="32" fill="#00f4fe" font-family="JetBrains Mono,monospace" font-size="10" text-anchor="end">LIVE</text>
+          <circle cx="1120" cy="27" r="4" fill="#00f4fe" opacity="0.8">
+            <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Main Chart Area -->
+          <path d="M80,450 Q200,380 320,400 T560,320 T800,360 T1040,250 L1040,500 L80,500 Z" fill="url(#chartGrad)"/>
+          <path d="M80,450 Q200,380 320,400 T560,320 T800,360 T1040,250" fill="none" stroke="#00f4fe" stroke-width="2">
+            <animate attributeName="stroke-dashoffset" from="2000" to="0" dur="3s" fill="freeze"/>
+          </path>
+          <!-- Bar Charts -->
+          <rect x="120" y="540" width="30" height="80" rx="3" fill="url(#barGrad1)" opacity="0.7"/>
+          <rect x="170" y="560" width="30" height="60" rx="3" fill="url(#barGrad1)" opacity="0.5"/>
+          <rect x="220" y="520" width="30" height="100" rx="3" fill="url(#barGrad1)" opacity="0.8"/>
+          <rect x="270" y="550" width="30" height="70" rx="3" fill="url(#barGrad1)" opacity="0.6"/>
+          <rect x="320" y="530" width="30" height="90" rx="3" fill="url(#barGrad1)" opacity="0.7"/>
+          <!-- Right Panel KPIs -->
+          <rect x="1060" y="70" width="120" height="90" rx="8" fill="#1c1b1c" opacity="0.7"/>
+          <text x="1075" y="95" fill="#a8a5a6" font-family="JetBrains Mono,monospace" font-size="8" text-transform="uppercase">THROUGHPUT</text>
+          <text x="1075" y="125" fill="#e5e2e3" font-family="Geist,sans-serif" font-size="22" font-weight="800">4.2 TB</text>
+          <text x="1130" y="125" fill="#00f4fe" font-family="JetBrains Mono,monospace" font-size="9">/s</text>
+          <rect x="1060" y="175" width="120" height="90" rx="8" fill="#1c1b1c" opacity="0.7"/>
+          <text x="1075" y="200" fill="#a8a5a6" font-family="JetBrains Mono,monospace" font-size="8">UPTIME</text>
+          <text x="1075" y="232" fill="#00f4fe" font-family="Geist,sans-serif" font-size="22" font-weight="800">99.99%</text>
+          <rect x="1060" y="280" width="120" height="90" rx="8" fill="#1c1b1c" opacity="0.7"/>
+          <text x="1075" y="305" fill="#a8a5a6" font-family="JetBrains Mono,monospace" font-size="8">LATENCY</text>
+          <text x="1075" y="337" fill="#ffb3ae" font-family="Geist,sans-serif" font-size="22" font-weight="800">&lt;1ms</text>
+          <!-- Donut Chart -->
+          <circle cx="900" cy="540" r="40" fill="none" stroke="#353436" stroke-width="8"/>
+          <circle cx="900" cy="540" r="40" fill="none" stroke="#e60026" stroke-width="8" stroke-dasharray="200 52" stroke-linecap="round" transform="rotate(-90 900 540)">
+            <animate attributeName="stroke-dasharray" values="0 252;200 52" dur="2s" fill="freeze"/>
+          </circle>
+          <text x="900" y="545" fill="#e5e2e3" font-family="Geist,sans-serif" font-size="14" font-weight="700" text-anchor="middle">78%</text>
+          <!-- Floating alert -->
+          <rect x="580" y="80" width="220" height="48" rx="8" fill="#1c1b1c" opacity="0.85"/>
+          <circle cx="600" cy="104" r="5" fill="#00f4fe"/>
+          <text x="614" y="100" fill="#e5e2e3" font-family="Geist,sans-serif" font-size="11" font-weight="600">Neural Routing Active</text>
+          <text x="614" y="116" fill="#a8a5a6" font-family="JetBrains Mono,monospace" font-size="9">All clusters nominal</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS BAR ═══ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-value crimson" data-count="99.99" data-suffix="%">0%</div>
+        <div class="stat-label">System Uptime</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-value cyan" data-count="40" data-suffix="%">0%</div>
+        <div class="stat-label">Faster Deployment</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-value purple" data-count="25" data-suffix="+">0+</div>
+        <div class="stat-label">Hours Saved Weekly</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-value crimson" data-count="100" data-suffix="+">0+</div>
+        <div class="stat-label">Industry Experts</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-label reveal">What We Build</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Custom Intelligence<br/>Platforms
+    </h2>
+    <p class="section-desc reveal reveal-delay-2">
+      Every dashboard we build is a bespoke system — engineered to the contours of your
+      existing business processes, not a template.
+    </p>
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card glass inner-glow reveal">
+        <div class="card-glow" style="background:rgba(230,0,38,0.08);"></div>
+        <div class="card-icon crimson-bg">
+          <span class="material-symbols-outlined">dashboard_customize</span>
+        </div>
+        <h3>Custom Dashboards</h3>
+        <p>Bespoke analytics interfaces with real-time data visualization, built to mirror your exact operational workflows.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="service-card glass inner-glow reveal reveal-delay-1">
+        <div class="card-glow" style="background:rgba(0,244,254,0.08);"></div>
+        <div class="card-icon cyan-bg">
+          <span class="material-symbols-outlined">neurology</span>
+        </div>
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent automation, predictive analytics, and neural models that transform raw data into actionable business intelligence.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="service-card glass inner-glow reveal reveal-delay-2">
+        <div class="card-glow" style="background:rgba(133,73,255,0.08);"></div>
+        <div class="card-icon purple-bg">
+          <span class="material-symbols-outlined">integration_instructions</span>
+        </div>
+        <h3>API & Integrations</h3>
+        <p>Unlimited API connectivity with total ecosystem unification. Your data, your cloud, fully sovereign.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="service-card glass inner-glow reveal">
+        <div class="card-glow" style="background:rgba(0,244,254,0.08);"></div>
+        <div class="card-icon cyan-bg">
+          <span class="material-symbols-outlined">monitoring</span>
+        </div>
+        <h3>Real-Time Analytics</h3>
+        <p>Sub-millisecond telemetry and monitoring. Live metrics rendered with luminous precision, actionable immediately.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="service-card glass inner-glow reveal reveal-delay-1">
+        <div class="card-glow" style="background:rgba(230,0,38,0.08);"></div>
+        <div class="card-icon crimson-bg">
+          <span class="material-symbols-outlined">cloud_sync</span>
+        </div>
+        <h3>Cloud Architecture</h3>
+        <p>Scalable, secure infrastructure hosted on your AWS/Cloud — complete data sovereignty with zero vendor lock-in.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="service-card glass inner-glow reveal reveal-delay-2">
+        <div class="card-glow" style="background:rgba(133,73,255,0.08);"></div>
+        <div class="card-icon purple-bg">
+          <span class="material-symbols-outlined">smart_toy</span>
+        </div>
+        <h3>Workflow Automation</h3>
+        <p>Custom automation pipelines that save 25+ hours weekly, replacing manual processes with intelligent orchestration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INDUSTRIES ═══ -->
+<section class="industries" id="industries">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal">Universal Needs, Specialized Applications</div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-left:auto;margin-right:auto;">
+        Every Industry Needs<br/>Data Intelligence
+      </h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin-left:auto;margin-right:auto;">
+        From healthcare to SaaS startups — every industry needs data visibility, automation, and operational intelligence.
+      </p>
+    </div>
+    <div class="industries-grid" style="margin-top:64px;">
+      <div class="industry-chip glass inner-glow reveal">
+        <div class="chip-icon">🏥</div>
+        <h4>Healthcare</h4>
+        <p>Patient data flow & resource allocation</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-1">
+        <div class="chip-icon">💹</div>
+        <h4>Finance</h4>
+        <p>Real-time market analytics & compliance</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-2">
+        <div class="chip-icon">🛒</div>
+        <h4>Ecommerce</h4>
+        <p>Inventory & conversion tracking</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-3">
+        <div class="chip-icon">🚛</div>
+        <h4>Logistics</h4>
+        <p>Supply chain & fleet monitoring</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal">
+        <div class="chip-icon">🎓</div>
+        <h4>Education</h4>
+        <p>Learning metrics & administration</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-1">
+        <div class="chip-icon">🏠</div>
+        <h4>Real Estate</h4>
+        <p>Portfolio & yield management</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-2">
+        <div class="chip-icon">🚀</div>
+        <h4>SaaS Startups</h4>
+        <p>Product usage & churn analytics</p>
+      </div>
+      <div class="industry-chip glass inner-glow reveal reveal-delay-3">
+        <div class="chip-icon">🏭</div>
+        <h4>Manufacturing</h4>
+        <p>Production line efficiency & IoT</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPARISON ═══ -->
+<section class="comparison" id="process">
+  <div class="container">
+    <div class="section-label reveal">The Pivot</div>
+    <h2 class="section-title reveal reveal-delay-1">Generic SaaS vs.<br/>Custom Architecture</h2>
+    <p class="section-desc reveal reveal-delay-2">Why settle for rigid software when you can own the system?</p>
+    <div class="comparison-table glass inner-glow reveal reveal-delay-3">
+      <div class="comp-row" style="background:rgba(42,42,43,0.5);">
+        <div class="comp-cell header label-cell">Dimension</div>
+        <div class="comp-cell header generic">Generic SaaS</div>
+        <div class="comp-cell header hevai" style="color:var(--secondary-container);">HEVAI Custom</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell label-cell">Workflow Fit</div>
+        <div class="comp-cell generic">Forces your team to adapt to rigid, pre-built operational models.</div>
+        <div class="comp-cell hevai">Built exactly to the contours of your existing business processes.</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell label-cell">Integration Depth</div>
+        <div class="comp-cell generic">Limited to native integrations; siloed data.</div>
+        <div class="comp-cell hevai">Unlimited API connectivity; total ecosystem unification.</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell label-cell">Data Ownership</div>
+        <div class="comp-cell generic">Rented infrastructure; data housed on third-party servers.</div>
+        <div class="comp-cell hevai">Complete sovereignty; hosted on your AWS/Cloud, fully secure.</div>
+      </div>
+      <div class="comp-row">
+        <div class="comp-cell label-cell">Scalability</div>
+        <div class="comp-cell generic">Punishing per-seat pricing models that penalize growth.</div>
+        <div class="comp-cell hevai">Infinitely scalable architecture with no per-user tax.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VALUE ENGINE ═══ -->
+<section class="value-engine" id="metrics">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal">The HEVAI Value Engine</div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-left:auto;margin-right:auto;">
+        Three Pillars of<br/>Operational Excellence
+      </h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card glass inner-glow reveal">
+        <div class="value-number" style="color:var(--primary);">99.99<span style="font-size:32px;">%</span></div>
+        <h3>System Reliability</h3>
+        <p>Uptime across highly secure, custom-built environments with dedicated infrastructure.</p>
+      </div>
+      <div class="value-card glass inner-glow reveal reveal-delay-1">
+        <div class="value-number" style="color:var(--secondary-container);">40<span style="font-size:32px;">%</span></div>
+        <h3>Deployment Velocity</h3>
+        <p>Faster time-to-market compared to traditional agency builds with our proven architecture.</p>
+      </div>
+      <div class="value-card glass inner-glow reveal reveal-delay-2">
+        <div class="value-number" style="color:var(--tertiary);">25<span style="font-size:32px;">+</span></div>
+        <h3>Operational ROI</h3>
+        <p>Hours saved weekly through custom automation & intelligent integrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LEADERSHIP ═══ -->
+<section class="leadership" id="leadership">
+  <div class="container">
+    <div style="text-align:center;">
+      <div class="section-label reveal">Our Leadership</div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-left:auto;margin-right:auto;">
+        The Minds Behind<br/>the <span style="color:var(--primary);">Momentum</span>
+      </h2>
+    </div>
+    <div class="leaders-grid">
+      <div class="leader-card glass inner-glow reveal">
+        <div class="leader-initials" style="background:linear-gradient(135deg, rgba(230,0,38,0.2), rgba(133,73,255,0.1)); color:var(--primary);">TV</div>
+        <h3>TVS Mohan Vishal Raj</h3>
+        <div class="leader-title">Managing Director</div>
+        <p>Visionary leader overseeing the long-term strategic evolution of the HEVAI ecosystem, ensuring every venture aligns with an intelligence-first future.</p>
+      </div>
+      <div class="leader-card glass inner-glow reveal reveal-delay-1">
+        <div class="leader-initials" style="background:linear-gradient(135deg, rgba(0,244,254,0.15), rgba(133,73,255,0.1)); color:var(--secondary-container);">BH</div>
+        <h3>B Hemanth Sri Sai</h3>
+        <div class="leader-title">Chief Executive Officer</div>
+        <p>A strategic visionary orchestrating the synergy between AI ecosystems and enterprise infrastructure, driving the mission to architect the intelligence of tomorrow.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section" id="cta">
+  <div class="cta-glow"></div>
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="section-label reveal">Ready to Transform?</div>
+    <h2 class="reveal reveal-delay-1">
+      Let's Build Your<br/>Next <span class="gradient-text" style="background:linear-gradient(135deg,var(--primary),var(--primary-container));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Dashboard.</span>
+    </h2>
+    <p class="reveal reveal-delay-2">
+      Stop adapting your business to rigid software.<br/>
+      Let's engineer a platform that adapts to you.
+    </p>
+    <div class="hero-cta-group reveal reveal-delay-3">
+      <a href="mailto:hevaiteam@gmail.com" class="btn-primary">Get Started →</a>
+      <a href="#services" class="btn-ghost">View Solutions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="font-size:24px;">HEVAI</div>
+        <p>Architecting the intelligence of tomorrow — quietly, relentlessly, and with a deep respect for the world we are building it for.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#services">Custom Dashboards</a></li>
+          <li><a href="#services">AI & ML</a></li>
+          <li><a href="#services">API Integrations</a></li>
+          <li><a href="#services">Cloud Architecture</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#metrics">Metrics</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Headquarters</h4>
+        <ul style="list-style:none;">
+          <li style="color:var(--on-surface-dim); font-size:14px; line-height:1.7;">
+            PLOT NO 04, Hanuman Temple Lane<br/>
+            Nagaram, Hyderabad<br/>
+            Telangana 500083<br/>
+            India
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 HEVAI Holdings. All rights reserved.</span>
+      <span>[SYSTEM_STATUS: ACTIVE]</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
