@@ -486,10 +486,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(-2px);
   border-color: rgba(0,244,254,0.2);
 }
-.industry-chip .chip-icon {
-  font-size: 28px;
-  margin-bottom: 8px;
-}
+
 .industry-chip h4 {
   font-size: 14px;
   font-weight: 600;
