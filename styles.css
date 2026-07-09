@@ -591,6 +591,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 @media (min-width: 768px) {
   .leaders-grid { grid-template-columns: repeat(2, 1fr); }
 }
+@media (min-width: 1024px) {
+  .leaders-grid { grid-template-columns: repeat(3, 1fr); }
+}
 .leader-card {
   padding: 40px;
   position: relative;
